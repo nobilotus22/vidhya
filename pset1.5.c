@@ -27,7 +27,9 @@ int main()
         break;
         case 8 :printf("VIII");
         break;
-        default :printf("XI");
+        case 9:printf("IX");
+        break;
+        default :printf("X");
         break;
     }
 
