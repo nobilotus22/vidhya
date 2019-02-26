@@ -14,6 +14,14 @@ int main()
                 a[j+1]=a[j+2];
             }
         }
+        if(a[i]==' ' && a[i-1]==' ')
+        {
+            for(j=i-1;a[j]!='\0';j++)
+            {
+                a[j+1]=a[j+2];
+            }
+        }
+        
     }
     puts(a);
     return 0;
