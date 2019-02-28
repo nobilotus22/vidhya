@@ -1,0 +1,61 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a[10],pos,n,i,j,k,c,z,b[10],d[10],x,max,sum=0,e;
+clrscr();
+printf("no of value and k value");
+scanf("%d%d",&n,&k);
+for(i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+b[i]=a[i];
+d[i]=a[i];
+}
+for(i=0;i<n+1-k;i++)
+{
+c=b[0];
+for(j=i+1;j<n;j++)
+{
+if(b[i]>c)
+{
+c=b[i];
+z=i;
+}
+}
+b[z]=0;
+}
+a[z]=0;
+max=d[0];
+for(i=0;i<n;i++)
+{
+if(d[i]>max)
+{
+max=d[i];
+}
+}
+ e=max;
+for(i=0;i<n+1-k;i++)
+{
+for(j=0;j<n;j++)
+  {
+  if(d[j]<e)
+  {
+  e=d[j];
+  pos=j;
+  x=j;
+  }
+  }
+  d[pos]=d[pos]+max;
+  e=d[pos];
+  }
+  a[x]=0;
+  for(i=0;i<n;i++)
+  {
+  sum=sum+a[0];
+  printf("%d",a[i]);
+  }
+  sum=sum/n;
+  printf("%d",sum);
+getch();
+}
