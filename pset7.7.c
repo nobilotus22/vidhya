@@ -2,13 +2,13 @@
 
 int main()
 {
-    int i,n,fact=1;
+    int i,n,f=1;
     scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
-        fact=fact*i;
+        f=f*i;
     }
-    printf("%d",fact);
+    printf("%d",f);
 
     return 0;
 }
