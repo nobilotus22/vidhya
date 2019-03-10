@@ -4,6 +4,7 @@ int main()
 {
     int n,a[100],i,j,temp,k;
     scanf("%d",&n);
+    scanf("%d",&k);
     for(i=0;i<n;i++)
     {
         scanf("%d",&a[i]);
@@ -21,7 +22,7 @@ a[j]=temp;
 }
 }
 }
-scanf("%d",&k);
+
     printf("  %d ",a[k-1]);
     
 
