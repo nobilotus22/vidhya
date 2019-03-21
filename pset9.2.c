@@ -1,14 +1,16 @@
-#include <stdio.h>
-int main(void) {
-	int a[10],i,n,result,j;
-	scanf("%d",&n);
-	for(i=1;i<=n;i++)
-	scanf("%d",&a[i]);
-	for(i=1;i<=n;i++)
-	for(j=i+1;j<=n;j++)
-	{
-		result=i&j;
-	}
-	printf("%d",result);
-	return 0;
+#include<stdio.h>
+
+int main() {
+  int n,a[100],ans,i,j;
+  scanf("%d",&n);
+  for(i=0;i<n;i++)
+  {
+      scanf("%d",&a[i]);
+  }
+ ans=a[0];
+  for(i=0;i<n;i++)
+  {
+      ans=ans&a[i];}
+  printf("%d",ans);
+  return 0;
 }
