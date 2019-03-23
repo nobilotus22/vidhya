@@ -11,5 +11,5 @@ int main(void)
 		pos=pos*2;
 		b=b/10;
 	}
-	printf("%lo",sum);
+	printf("%X",sum);
 }
