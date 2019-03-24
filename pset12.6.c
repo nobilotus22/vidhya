@@ -1,0 +1,61 @@
+int main()
+{
+    int ar[100],i,j,num,br[100],k=0,mr[100],cr[100],len=0,temp,ve=0,su;
+    scanf("%d",&num);
+    for(i=0;i<num;i++)
+    {
+        scanf("%d",&ar[i]);
+    }
+    for(i=0;i<num;i++)
+    {
+        ve=1;
+        for(j=i+1;j<num;j++)
+        {
+            if(ar[i]==ar[j])
+            {
+             ve++;
+             ar[j]='\0';
+            }
+        }
+        if(ar[i]!='\0')
+        {
+        mr[k]=ar[i];
+        br[k]=ve;
+        k++;
+        }
+    }
+    su=0;
+    for(i=0;i<k;i++)
+    {
+        for(j=i+1;j<k;j++)
+        {
+            if(br[i]==br[j])
+            {
+                cr[len]=mr[i];
+                len++;
+                cr[len]=mr[j];
+                len++;
+                br[i]='\0';
+            }
+        }
+        if(j==k)
+        {
+            ar[su]=me[i];
+            su++;
+        }
+    }
+    for(i=0;i<len;i++)
+    {
+        for(j=i+1;j<len;j++)
+        {
+            if(cr[i]<cr[j])
+            {
+                temp=cr[i];
+                cr[i]=cr[j];
+                cr[j]=temp;
+            }
+        }
+        printf("%d ",cr[i]);
+    }
+    printf("%d ans is",ar[0]);
+}
