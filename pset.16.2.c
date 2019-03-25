@@ -31,9 +31,6 @@ void main()
                 i++;
                 
             }
-            
-       
-        
     }
         
     printf("%d",count);
