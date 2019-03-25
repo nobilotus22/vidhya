@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    char str[100][100];
+    int i,j,num,flag=0,max=0,count=0,k;
+    scanf("%d",&num);
+    for(i=0;i<num;i++)
+    {
+     scanf("%s",str[i]);
+    }
+    for(i=0;i<num;i++)
+    {
+     count=strlen(str[i]);
+     if(count>max)
+     {
+      max=count;
+     }
+    }
+    for(j=0;j<count;j++)
+    {
+     for(i=1;i<num;i++)
+     {
+      for(k=0;k<max;k++)
+      {
+       if(str[j][k]<=str[i][k])
+       {
+	flag=1;
+       }
+      else
+      {
+	flag=0;
+	break;
+      }
+     }
+    }
+    if(flag==1)
+    {
+     printf("%s",str[j]);
+     break;
+    }
+   }
+getch();
+}  
