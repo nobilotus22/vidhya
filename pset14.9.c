@@ -18,5 +18,4 @@ void  main()
     if(t[i]==1)
            l++;
      printf("%d",l);
-
 }
