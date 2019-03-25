@@ -20,4 +20,5 @@ int main() {
       bin=bin/10;
   }
   printf("%d",c);
+   
 }
