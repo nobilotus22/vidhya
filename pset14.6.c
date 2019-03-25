@@ -19,5 +19,6 @@ if(m!=0)
 {
     printf("yes ");
     printf("%d",m);
-}}
+}
+}
     
