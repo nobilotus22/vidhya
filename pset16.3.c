@@ -8,3 +8,5 @@ void main()
 	for(i=k-1;str[i]!='\0';i=i+k)
 		printf("%c ",str[i]);
 }
+
+
