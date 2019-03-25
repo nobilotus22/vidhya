@@ -1,11 +1,11 @@
 #include<stdio.h>
 
 int main() {
-   int n,i,a[100],s=0;
-   scanf("%d",&n);
-   for(i=0;i<n;i++)
+   int m,i,a[100],s=0;
+   scanf("%d",&m);
+   for(i=0;i<m;i++)
    scanf("%d",&a[i]);
-   for(i=0;i<n;i++)
+   for(i=0;i<m;i++)
    {
       if(a[i]<=0)
       {
