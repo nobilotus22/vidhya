@@ -20,7 +20,6 @@ void main()
 		}
 		if(flag==0)
 			break;
-	
 	}
 	if(flag==0)
 		printf("no");
